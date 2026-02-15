@@ -1,21 +1,27 @@
 import {
   Mira,
-  Kira,
   Tiramisu,
   Ash,
   Misu,
   Baghera,
+  Smokey,
+  Garfield,
+  Mochi,
+  Nala,
   Daisy,
   Chili,
   Wendy,
   Winnie,
 } from "../constants/AnimalDescription";
 import miraPhoto from "../assets/photos/mira/mira.jpg";
-import kiraPhoto from "../assets/photos/kira/kira.jpg";
 import tiramisuPhoto from "../assets/photos/tiramisu/tiramisu.jpg";
 import ashPhoto from "../assets/photos/ash/ash.jpeg";
 import misuPhoto from "../assets/photos/misu/misu.jpg";
 import bagheraPhoto from "../assets/photos/baghera/baghera.jpg";
+import smokeyPhoto from "../assets/photos/smokey/smokey.jpeg";
+import garfieldPhoto from "../assets/photos/garfield/garfield.jpeg";
+import mochiPhoto from "../assets/photos/mochi/mochi.jpeg";
+import nalaPhoto from "../assets/photos/nala/nala.jpeg";
 import daisyPhoto from "../assets/photos/daisy/daisy.jpeg";
 import chiliPhoto from "../assets/photos/chili/chili.jpg";
 import wendyPhoto from "../assets/photos/wendy/wendy.jpeg";
@@ -58,46 +64,6 @@ function Galerie() {
             {/* Button */}
             <div className="mt-10 mx-auto">
               <Link to={`/animal/${mira.animalTitle.toLowerCase()}`}>
-                <button
-                  className="bg-[#633404] text-white px-4 py-2 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-[#633304bb] hover:text-white hover:shadow-lg"
-                  style={{ boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.7)" }}
-                >
-                  Vezi mai multe &gt;
-                </button>
-              </Link>
-            </div>
-          </div>
-        ))}
-
-        {/* Kira */}
-        {Kira.map((kira, index) => (
-          <div
-            key={index}
-            className="relative flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden p-6 transition-transform hover:scale-105 md:mt-20"
-          >
-            {/* Imaginea animalului */}
-            <div className="relative flex justify-center items-center">
-              <img
-                src={kiraPhoto}
-                alt={kira.animalTitle}
-                className="w-full h-[300px] object-cover rounded-3xl md:h-[200px] lg:h-[300px]"
-              />
-              {/* Overlay pentru titlu */}
-              <h1 className="absolute inset-0 flex justify-center items-center text-5xl md:text-3xl lg:text-4xl font-bold text-[#FDF6EC] bg-black/40 rounded-3xl p-4">
-                {kira.animalTitle}
-              </h1>
-            </div>
-
-            {/* Text descriptiv */}
-            <div className="flex flex-col justify-between flex-grow mt-10">
-              <p className="text-[#633404] font-normal text-lg xl:text-lg lg:text-2xl text-justify leading-relaxed">
-                {kira.smallText}
-              </p>
-            </div>
-
-            {/* Button */}
-            <div className="mt-10 mx-auto">
-              <Link to={`/animal/${kira.animalTitle.toLowerCase()}`}>
                 <button
                   className="bg-[#633404] text-white px-4 py-2 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-[#633304bb] hover:text-white hover:shadow-lg"
                   style={{ boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.7)" }}
@@ -153,7 +119,7 @@ function Galerie() {
         {Ash.map((ash, index) => (
           <div
             key={index}
-            className="relative flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden p-6 transition-transform hover:scale-105"
+            className="relative flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden p-6 transition-transform hover:scale-105 xl:mt-20"
           >
             {/* Imaginea animalului */}
             <div className="relative flex justify-center items-center">
@@ -258,6 +224,166 @@ function Galerie() {
             {/* Button */}
             <div className="mt-10 mx-auto">
               <Link to={`/animal/${baghera.animalTitle.toLowerCase()}`}>
+                <button
+                  className="bg-[#633404] text-white px-4 py-2 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-[#633304bb] hover:text-white hover:shadow-lg"
+                  style={{ boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.7)" }}
+                >
+                  Vezi mai multe &gt;
+                </button>
+              </Link>
+            </div>
+          </div>
+        ))}
+
+        {/* Smokey */}
+        {Smokey.map((smokey, index) => (
+          <div
+            key={index}
+            className="relative flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden p-6 transition-transform hover:scale-105"
+          >
+            {/* Imaginea animalului */}
+            <div className="relative flex justify-center items-center">
+              <img
+                src={smokeyPhoto}
+                alt={smokey.animalTitle}
+                className="w-full h-[300px] object-cover rounded-3xl md:h-[200px] lg:h-[300px]"
+              />
+              {/* Overlay pentru titlu */}
+              <h1 className="absolute inset-0 flex justify-center items-center text-5xl md:text-3xl lg:text-4xl font-bold text-[#FDF6EC] bg-black/40 rounded-3xl p-4">
+                {smokey.animalTitle}
+              </h1>
+            </div>
+
+            {/* Text descriptiv */}
+            <div className="flex flex-col justify-between flex-grow mt-10">
+              <p className="text-[#633404] font-normal text-lg xl:text-lg lg:text-2xl text-justify leading-relaxed">
+                {smokey.smallText}
+              </p>
+            </div>
+
+            {/* Button */}
+            <div className="mt-10 mx-auto">
+              <Link to={`/animal/${smokey.animalTitle.toLowerCase()}`}>
+                <button
+                  className="bg-[#633404] text-white px-4 py-2 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-[#633304bb] hover:text-white hover:shadow-lg"
+                  style={{ boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.7)" }}
+                >
+                  Vezi mai multe &gt;
+                </button>
+              </Link>
+            </div>
+          </div>
+        ))}
+
+        {/* Garfield */}
+        {Garfield.map((garfield, index) => (
+          <div
+            key={index}
+            className="relative flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden p-6 transition-transform hover:scale-105"
+          >
+            {/* Imaginea animalului */}
+            <div className="relative flex justify-center items-center">
+              <img
+                src={garfieldPhoto}
+                alt={garfield.animalTitle}
+                className="w-full h-[300px] object-cover rounded-3xl md:h-[200px] lg:h-[300px]"
+              />
+              {/* Overlay pentru titlu */}
+              <h1 className="absolute inset-0 flex justify-center items-center text-5xl md:text-3xl lg:text-4xl font-bold text-[#FDF6EC] bg-black/40 rounded-3xl p-4">
+                {garfield.animalTitle}
+              </h1>
+            </div>
+
+            {/* Text descriptiv */}
+            <div className="flex flex-col justify-between flex-grow mt-10">
+              <p className="text-[#633404] font-normal text-lg xl:text-lg lg:text-2xl text-justify leading-relaxed">
+                {garfield.smallText}
+              </p>
+            </div>
+
+            {/* Button */}
+            <div className="mt-10 mx-auto">
+              <Link to={`/animal/${garfield.animalTitle.toLowerCase()}`}>
+                <button
+                  className="bg-[#633404] text-white px-4 py-2 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-[#633304bb] hover:text-white hover:shadow-lg"
+                  style={{ boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.7)" }}
+                >
+                  Vezi mai multe &gt;
+                </button>
+              </Link>
+            </div>
+          </div>
+        ))}
+
+        {/* Mochi */}
+        {Mochi.map((mochi, index) => (
+          <div
+            key={index}
+            className="relative flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden p-6 transition-transform hover:scale-105"
+          >
+            {/* Imaginea animalului */}
+            <div className="relative flex justify-center items-center">
+              <img
+                src={mochiPhoto}
+                alt={mochi.animalTitle}
+                className="w-full h-[300px] object-cover rounded-3xl md:h-[200px] lg:h-[300px]"
+              />
+              {/* Overlay pentru titlu */}
+              <h1 className="absolute inset-0 flex justify-center items-center text-5xl md:text-3xl lg:text-4xl font-bold text-[#FDF6EC] bg-black/40 rounded-3xl p-4">
+                {mochi.animalTitle}
+              </h1>
+            </div>
+
+            {/* Text descriptiv */}
+            <div className="flex flex-col justify-between flex-grow mt-10">
+              <p className="text-[#633404] font-normal text-lg xl:text-lg lg:text-2xl text-justify leading-relaxed">
+                {mochi.smallText}
+              </p>
+            </div>
+
+            {/* Button */}
+            <div className="mt-10 mx-auto">
+              <Link to={`/animal/${mochi.animalTitle.toLowerCase()}`}>
+                <button
+                  className="bg-[#633404] text-white px-4 py-2 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-[#633304bb] hover:text-white hover:shadow-lg"
+                  style={{ boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.7)" }}
+                >
+                  Vezi mai multe &gt;
+                </button>
+              </Link>
+            </div>
+          </div>
+        ))}
+
+        {/* Nala */}
+        {Nala.map((nala, index) => (
+          <div
+            key={index}
+            className="relative flex flex-col bg-white rounded-3xl shadow-lg overflow-hidden p-6 transition-transform hover:scale-105"
+          >
+            {/* Imaginea animalului */}
+            <div className="relative flex justify-center items-center">
+              <img
+                src={nalaPhoto}
+                alt={nala.animalTitle}
+                className="w-full h-[300px] object-cover rounded-3xl md:h-[200px] lg:h-[300px]"
+              />
+              {/* Overlay pentru titlu */}
+              <h1 className="absolute inset-0 flex justify-center items-center text-5xl md:text-3xl lg:text-4xl font-bold text-[#FDF6EC] bg-black/40 rounded-3xl p-4">
+                {nala.animalTitle}
+              </h1>
+            </div>
+
+            {/* Text descriptiv */}
+            <div className="flex flex-col justify-between flex-grow mt-10">
+              <p className="text-[#633404] font-normal text-lg xl:text-lg lg:text-2xl text-justify leading-relaxed">
+                {nala.smallText}
+              </p>
+            </div>
+
+            {/* Button */}
+            <div className="mt-10 mx-auto">
+              <Link to={`/animal/${nala.animalTitle.toLowerCase()}`}>
                 <button
                   className="bg-[#633404] text-white px-4 py-2 rounded-lg text-lg transition-all duration-300 ease-in-out hover:bg-[#633304bb] hover:text-white hover:shadow-lg"
                   style={{ boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.7)" }}

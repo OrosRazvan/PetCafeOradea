@@ -1,5 +1,4 @@
 import imgMira from "../assets/photos/mira/mira.jpg";
-import imgKira from "../assets/photos/kira/kira.jpg";
 import imgTiramisu from "../assets/photos/tiramisu/tiramisu.jpg";
 import imgAsh from "../assets/photos/ash/ash.jpg";
 import imgDaisy from "../assets/photos/daisy/daisy.jpeg";
@@ -8,16 +7,15 @@ import imgWinnie from "../assets/photos/winnie/winnie.jpeg";
 import imgWendy from "../assets/photos/wendy/wendy.jpeg";
 import imgMisu from "../assets/photos/misu/misu.jpg";
 import imgBaghera from "../assets/photos/baghera/baghera.jpg";
+import imgSmokey from "../assets/photos/smokey/smokey.jpeg";
+import imgGarfield from "../assets/photos/garfield/garfield.jpeg";
+import imgMochi from "../assets/photos/mochi/mochi.jpeg";
+import imgNala from "../assets/photos/nala/nala.jpeg";
 
 // Import dinamic pentru Mira
 const imaginiMira = import.meta.glob('../assets/photos/mira/*.{jpg,jpeg,png}', { eager: true });
 const imaginiMiraArray = Object.values(imaginiMira).map(module => module.default);
 const additionalImagesMira = imaginiMiraArray.filter(img => img !== imgMira);
-
-// Import dinamic pentru Kira
-const imaginiKira = import.meta.glob('../assets/photos/kira/*.{jpg,jpeg,png}', { eager: true });
-const imaginiKiraArray = Object.values(imaginiKira).map(module => module.default);
-const additionalImagesKira = imaginiKiraArray.filter(img => img !== imgKira);
 
 // Import dinamic pentru Tiramisu
 const imaginiTiramisu = import.meta.glob('../assets/photos/tiramisu/*.{jpg,jpeg,png}', { eager: true });
@@ -38,6 +36,26 @@ const additionalImagesMisu = imaginiMisuArray.filter(img => img !== imgMisu);
 const imaginiBaghera = import.meta.glob('../assets/photos/baghera/*.{jpg,jpeg,png}', { eager: true });
 const imaginiBagheraArray = Object.values(imaginiBaghera).map(module => module.default);
 const additionalImagesBaghera = imaginiBagheraArray.filter(img => img !== imgBaghera);
+
+// Import dinamic pentru Smokey
+const imaginiSmokey = import.meta.glob('../assets/photos/smokey/*.{jpg,jpeg,png}', { eager: true });
+const imaginiSmokeyArray = Object.values(imaginiSmokey).map(module => module.default);
+const additionalImagesSmokey = imaginiSmokeyArray.filter(img => img !== imgSmokey);
+
+// Import dinamic pentru Garfield
+const imaginiGarfield = import.meta.glob('../assets/photos/garfield/*.{jpg,jpeg,png}', { eager: true });
+const imaginiGarfieldArray = Object.values(imaginiGarfield).map(module => module.default);
+const additionalImagesGarfield = imaginiGarfieldArray.filter(img => img !== imgGarfield);
+
+// Import dinamic pentru Mochi
+const imaginiMochi = import.meta.glob('../assets/photos/mochi/*.{jpg,jpeg,png}', { eager: true });
+const imaginiMochiArray = Object.values(imaginiMochi).map(module => module.default);
+const additionalImagesMochi = imaginiMochiArray.filter(img => img !== imgMochi);
+
+// Import dinamic pentru Nala
+const imaginiNala = import.meta.glob('../assets/photos/nala/*.{jpg,jpeg,png}', { eager: true });
+const imaginiNalaArray = Object.values(imaginiNala).map(module => module.default);
+const additionalImagesNala = imaginiNalaArray.filter(img => img !== imgNala);
 
 // Import dinamic pentru Daisy
 const imaginiDaisy = import.meta.glob('../assets/photos/daisy/*.{jpg,jpeg,png}', { eager: true });
@@ -67,17 +85,6 @@ export const Mira = [
     denumire:
       "Sunt o domnisoara din rasa british shorthair, foarte calma, ador somnul si pliculețele. (Da, eu sunt pisicuta care adoarme pe spate intotdeauna).",
     additionalImages: additionalImagesMira,
-  },
-];
-
-export const Kira = [
-  {
-    animalTitle: "Kira",
-    imgURL: imgKira,
-    smallText: "Sunt o fetita din rasa british shorthair, prietenoasa de obicei dar am si eu toanele mele, evident...",
-    denumire:
-      "Sunt o fetita din rasa british shorthair, prietenoasa de obicei dar am si eu toanele mele, evident. Imi place sa ma joc cu ghiozdanele clientilor si adorm mereu pe mese. P.S.: daca iti lasi cappuccino-ul nesupravegheat mai mult de 3 secunde fii sigur ca-l voi ataca!",
-    additionalImages: additionalImagesKira,
   },
 ];
 
@@ -122,6 +129,50 @@ export const Baghera = [
     denumire:
       "Această pisică adoră să fie în centrul atenției și să primească alinturi. Se va așeza lângă tine pe canapea sau îți va „cerși” atenția prin frecarea ușoară a botului. Este perfectă pentru cei care caută o companie afectuoasă și devotată.",
     additionalImages: additionalImagesBaghera,
+  },
+];
+
+export const Smokey = [
+  {
+    animalTitle: "Smokey",
+    imgURL: imgSmokey,
+    smallText: "Smokey este un motan British Shorthair cu blană deasă și catifelată, într-o nuanță elegantă de gri fumuriu, care parcă...",
+    denumire:
+      "Smokey este un motan British Shorthair cu blană deasă și catifelată, într-o nuanță elegantă de gri fumuriu, care parcă îi justifică perfect numele. Are o privire rotundă și curioasă, mereu atentă la ce se întâmplă în jur, dar mai ales la ce se află pe masă atunci când avem oaspeți. Cu o personalitate jucăușă și ușor șmecheră, Smokey a dezvoltat o pasiune neobișnuită: cafeaua oaspeților noștri. Nu o bea ca un motan obișnuit — el are propriul ritual. Se apropie tacticos, își strecoară cu maximă seriozitate lăbuța pufoasă în ceașcă și apoi gustă delicat de pe lăbuță, de parcă ar fi un mic somelier curios de aromă. Totul se întâmplă cu o naturalețe dezarmantă, sub privirile amuzate ale tuturor.",
+    additionalImages: additionalImagesSmokey,
+  },
+];
+
+export const Garfield = [
+  {
+    animalTitle: "Garfield",
+    imgURL: imgGarfield,
+    smallText: "Garfield este un motănel de rasă comună, cu blănița galben-aurie, numai bună de mângâiat, și cu o expresie care trădează pofta lui...",
+    denumire:
+      "Garfield este un motănel de rasă comună, cu blănița galben-aurie, numai bună de mângâiat, și cu o expresie care trădează pofta lui constantă pentru micile plăceri ale vieții. Este genul de pisic care pare mereu relaxat, dar care devine brusc foarte atent atunci când simte miros de cafea. Marele lui punct slab este cafeaua cu lapte, în special latte-ul. De îndată ce apare o cană cu spumă cremoasă, Garfield se transformă într-un adevărat inspector: se apropie curios, adulmecă serios și urmărește fiecare mișcare, sperând să prindă măcar o picătură. Pentru el, combinația de cafea și lapte este apogeul răsfățului, chiar dacă doar gustată pe furiș.",
+    additionalImages: additionalImagesGarfield,
+  },
+];
+
+export const Mochi = [
+  {
+    animalTitle: "Mochi",
+    imgURL: imgMochi,
+    smallText: "Mochi este o pisicuță specială, născută din două rase deosebite: Birmaneză, moștenită de la mama ei, Tiramisu, și Persană Ash...",
+    denumire:
+      "Mochi este o pisicuță specială, născută din două rase deosebite: Birmaneză, moștenită de la mama ei, Tiramisu, și Persană Ash, de la elegantul domn Ash. Din această combinație a primit nu doar frumusețea, ci și ambele caractere ale părinților ei. Așa se face că Mochi poate fi uneori distantă și liniștită, fără prea mult chef de alint, iar alteori te poate surprinde iubindu-te mai mult ca niciodată, cu o afecțiune profundă și sinceră. Este o pisicuță a contrastelor dulci: calmă, fină, dar cu momente de iubire intensă care îți topesc inima 🐾🤍",
+    additionalImages: additionalImagesMochi,
+  },
+];
+
+export const Nala = [
+  {
+    animalTitle: "Nala",
+    imgURL: imgNala,
+    smallText: "Nala este o pisică de rasă comună, dar cu un aspect care amintește mult de o pisică bengaleză....",
+    denumire:
+      "Nala este o pisică de rasă comună, dar cu un aspect care amintește mult de o pisică bengaleză. Are energie din plin, este extrem de activă și mereu pusă pe năzbâtii, genul de pisică ce nu poate sta locului nicio clipă. Când părinții mei adoptivi m-au întâlnit prima dată, au spus că sunt fetiță și mi-au pus numele Nala. Dar am crescut, iar adevărul a ieșit la iveală: sunt, de fapt, un mascul „feroce”. Așa a apărut și numele meu adevărat — Nelu’ 😼. Lui Nelu’ îi place distracția mai mult decât orice. Este mereu în alertă, gata de joacă, alergat, sărit și explorat. Așa că, un mic sfat: ține-ți bine ceștile când Nelu’ e treaz, pentru că nimic nu e în siguranță atunci când cheful de joacă își face apariția ☕🐾",
+    additionalImages: additionalImagesNala,
   },
 ];
 

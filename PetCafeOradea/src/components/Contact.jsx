@@ -24,7 +24,7 @@ function Contact() {
                   Telefon
                 </p>
                 <p className="font-semibold text-2xl md:text-2xl lg:text-2xl xl:text-3xl text-[#EF7F00]">
-                  0773 747 056
+                  0775 303 894 
                 </p>
               </div>
 

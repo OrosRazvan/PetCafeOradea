@@ -3,11 +3,14 @@ import { Link, useParams } from "react-router-dom";
 import { FaPaw, FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
 import {
   Mira,
-  Kira,
   Tiramisu,
   Ash,
   Misu,
   Baghera,
+  Smokey,
+  Garfield,
+  Nala,
+  Mochi,
   Daisy,
   Chili,
   Wendy,
@@ -23,11 +26,14 @@ const AnimalPage = () => {
   // Obiect pentru stocarea datelor animalelor
   const animalsData = {
     mira: Mira,
-    kira: Kira,
     tiramisu: Tiramisu,
     ash: Ash,
     misu: Misu,
     baghera: Baghera,
+    smokey: Smokey,
+    garfield: Garfield,
+    mochi: Mochi,
+    nala: Nala,
     daisy: Daisy,
     chili: Chili,
     wendy: Wendy,
